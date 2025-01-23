@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Squid";
   src: url("../public/font/Game\ Of\ Squids.otf ") format("otf"),
-    url("../public/font/Game\ Of\ Squids.ttf") format("ttf");
+    url("../public/font/Game\ Of\ Squids.ttf") format("truetype");
   font-weight: medium;
   font-style: medium;
 }
@@ -85,7 +85,6 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  font-family: "Squid";
 }
 .bigcontainer {
   width: 100%;
@@ -112,11 +111,12 @@
   position: absolute;
   scale: 0.8;
   top: 0;
-  right: 10%;
+  right: 9%;
 }
 .heading {
   font-size: 6.5rem;
   color: #000;
+  font-family: "Squid";
 }
 p {
   font-size: 14px;
@@ -135,8 +135,14 @@ h3 {
   object-fit: contain;
   border-radius: 50%;
 }
+.introo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .intro a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   border: 3px solid #e93e7d;
   padding: 5px 10px;
+  width: max-content;
 }
